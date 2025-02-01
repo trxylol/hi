@@ -2,47 +2,83 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coinbase Clone</title>
+  <title>Buy & Sell Bitcoin, Ethereum, and more with Coinbase</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="header">
     <div class="logo">
-      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect width="32" height="32" rx="16" fill="#2D5BFF"/>
-        <path d="M16 22C19.3137 22 22 19.3137 22 16C22 12.6863 19.3137 10 16 10C12.6863 10 10 12.6863 10 16C10 19.3137 12.6863 22 16 22Z" fill="white"/>
+      <svg width="112" height="20" viewBox="0 0 112 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10 0C4.48 0 0 4.48 0 10C0 15.52 4.48 20 10 20C15.52 20 20 15.52 20 10C20 4.48 15.52 0 10 0ZM10 18C5.59 18 2 14.41 2 10C2 5.59 5.59 2 10 2C14.41 2 18 5.59 18 10C18 14.41 14.41 18 10 18Z" fill="#0052FF"/>
+        <path d="M38.24 15.5V4.5H35.04V15.5H38.24ZM44.64 15.5V10.7C44.64 9.1 45.84 7.9 47.44 7.9C49.04 7.9 50.24 9.1 50.24 10.7V15.5H53.44V10.3C53.44 7.3 51.44 5.3 48.44 5.3C46.84 5.3 45.44 6.1 44.64 7.3V5.5H41.44V15.5H44.64ZM59.84 15.5V10.7C59.84 9.1 61.04 7.9 62.64 7.9C64.24 7.9 65.44 9.1 65.44 10.7V15.5H68.64V10.3C68.64 7.3 66.64 5.3 63.64 5.3C62.04 5.3 60.64 6.1 59.84 7.3V5.5H56.64V15.5H59.84ZM75.04 15.5V4.5H71.84V15.5H75.04ZM81.44 15.5V10.7C81.44 9.1 82.64 7.9 84.24 7.9C85.84 7.9 87.04 9.1 87.04 10.7V15.5H90.24V10.3C90.24 7.3 88.24 5.3 85.24 5.3C83.64 5.3 82.24 6.1 81.44 7.3V5.5H78.24V15.5H81.44ZM96.64 15.5V10.7C96.64 9.1 97.84 7.9 99.44 7.9C101.04 7.9 102.24 9.1 102.24 10.7V15.5H105.44V10.3C105.44 7.3 103.44 5.3 100.44 5.3C98.84 5.3 97.44 6.1 96.64 7.3V5.5H93.44V15.5H96.64Z" fill="#0052FF"/>
       </svg>
-      <span>Coinbase Clone</span>
     </div>
     <nav class="nav">
-      <a href="#" class="nav-link">Prices</a>
-      <a href="#" class="nav-link">Portfolio</a>
-      <a href="#" class="nav-link">Trade</a>
+      <a href="#" class="nav-link">Explore</a>
       <a href="#" class="nav-link">Learn</a>
+      <a href="#" class="nav-link">Individuals</a>
+      <a href="#" class="nav-link">Businesses</a>
+      <a href="#" class="nav-link">Developers</a>
+      <a href="#" class="nav-link">Company</a>
     </nav>
     <div class="auth-buttons">
-      <button class="btn btn-outline">Sign In</button>
-      <button class="btn btn-primary">Get Started</button>
+      <button class="btn btn-text">Sign in</button>
+      <button class="btn btn-primary">Get started</button>
     </div>
   </header>
 
-  <main class="hero">
-    <div class="hero-content">
-      <h1>Jump start your crypto portfolio</h1>
-      <p>Coinbase is the easiest place to buy and sell cryptocurrency. Sign up and get started today.</p>
-      <form class="email-form">
-        <input type="email" placeholder="Email address">
-        <button type="submit" class="btn btn-primary">Get started</button>
-      </form>
-    </div>
-    <div class="hero-illustration">
-      <svg width="500" height="400" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <rect x="100" y="50" width="300" height="300" rx="20" fill="#2D5BFF"/>
-        <circle cx="250" cy="200" r="100" fill="#FFD700"/>
-        <circle cx="250" cy="200" r="80" fill="#FFE55C"/>
-        <circle cx="250" cy="200" r="60" fill="#FFEC8B"/>
-      </svg>
-    </div>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Jump start your crypto portfolio</h1>
+        <p>Coinbase is the most trusted place to buy, sell, and manage crypto</p>
+        <form class="email-form">
+          <input type="email" placeholder="Email address">
+          <button type="submit" class="btn btn-primary">Get started</button>
+        </form>
+      </div>
+      <div class="hero-illustration">
+        <div class="crypto-chart">
+          <div class="crypto-item">
+            <div class="crypto-info">
+              <svg class="crypto-icon" viewBox="0 0 32 32">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="16" cy="16" r="16" fill="#F7931A"/>
+                  <path fill="#FFF" d="M23.189 14.02c.314-2.096-1.283-3.223-3.465-3.975l.708-2.84-1.728-.43-.69 2.765c-.454-.114-.92-.22-1.385-.326l.695-2.783L15.596 6l-.708 2.839c-.376-.086-.746-.17-1.104-.26l.002-.009-2.384-.595-.46 1.846s1.283.294 1.256.312c.7.175.826.638.805 1.006l-.806 3.235c.048.012.11.03.18.057l-.183-.045-1.13 4.532c-.086.212-.303.531-.793.41.018.025-1.256-.313-1.256-.313l-.858 1.978 2.25.561c.418.105.828.215 1.231.318l-.715 2.872 1.727.43.708-2.84c.472.127.93.245 1.378.357l-.706 2.828 1.728.43.715-2.866c2.948.558 5.164.333 6.097-2.333.752-2.146-.037-3.385-1.588-4.192 1.13-.26 1.98-1.003 2.207-2.538zm-3.95 5.538c-.533 2.147-4.148.986-5.32.695l.95-3.805c1.172.293 4.929.872 4.37 3.11zm.535-5.569c-.487 1.953-3.495.96-4.47.717l.86-3.45c.975.243 4.118.696 3.61 2.733z"/>
+                </g>
+              </svg>
+              <div>
+                <span class="crypto-name">Bitcoin</span>
+                <span class="crypto-price">$42,531.24</span>
+              </div>
+            </div>
+            <div class="price-change positive">+3.51%</div>
+          </div>
+          <div class="crypto-item">
+            <div class="crypto-info">
+              <svg class="crypto-icon" viewBox="0 0 32 32">
+                <g fill="none" fill-rule="evenodd">
+                  <circle cx="16" cy="16" r="16" fill="#627EEA"/>
+                  <g fill="#FFF" fill-rule="nonzero">
+                    <path fill-opacity=".602" d="M16.498 4v8.87l7.497 3.35z"/>
+                    <path d="M16.498 4L9 16.22l7.498-3.35z"/>
+                    <path fill-opacity=".602" d="M16.498 21.968v6.027L24 17.616z"/>
+                    <path d="M16.498 27.995v-6.028L9 17.616z"/>
+                    <path fill-opacity=".2" d="M16.498 20.573l7.497-4.353-7.497-3.348z"/>
+                    <path fill-opacity=".602" d="M9 16.22l7.498 4.353v-7.701z"/>
+                  </g>
+                </g>
+              </svg>
+              <div>
+                <span class="crypto-name">Ethereum</span>
+                <span class="crypto-price">$2,274.31</span>
+              </div>
+            </div>
+            <div class="price-change positive">+2.87%</div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <script src="script.js"></script>
